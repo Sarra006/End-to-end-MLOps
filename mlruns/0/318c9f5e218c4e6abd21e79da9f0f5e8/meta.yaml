@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps/mlruns/0/318c9f5e218c4e6abd21e79da9f0f5e8/artifacts
+end_time: 1746298811845
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 318c9f5e218c4e6abd21e79da9f0f5e8
+run_name: naive_bayes_model.pkl
+run_uuid: 318c9f5e218c4e6abd21e79da9f0f5e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746298806444
+status: 3
+tags: []
+user_id: Sarra

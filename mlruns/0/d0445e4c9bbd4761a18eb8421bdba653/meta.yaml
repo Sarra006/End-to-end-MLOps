@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps/mlruns/0/d0445e4c9bbd4761a18eb8421bdba653/artifacts
+end_time: 1746298462509
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d0445e4c9bbd4761a18eb8421bdba653
+run_name: decision_tree_model.pkl
+run_uuid: d0445e4c9bbd4761a18eb8421bdba653
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746298457254
+status: 3
+tags: []
+user_id: Sarra

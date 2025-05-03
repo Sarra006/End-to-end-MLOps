@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps/mlruns/0/99fe128b13fc4059b57979d1682b1141/artifacts
+end_time: 1746298502461
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 99fe128b13fc4059b57979d1682b1141
+run_name: xgboost_model.pkl
+run_uuid: 99fe128b13fc4059b57979d1682b1141
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746298493478
+status: 3
+tags: []
+user_id: Sarra
