@@ -1,54 +1,66 @@
-name: CI/CD Docker Only
+name: CI/CD for Dockerized Streamlit App
 
 on:
   push:
-    branches:
-      - main
-    paths-ignore:
-      - 'README.md'
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  integration:
-    name: Intégration Continue
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout du code
-        uses: actions/checkout@v3
-
-      - name: Lint du code
-        run: echo "Linting du dépôt (ajoute flake8 ou autre outil si nécessaire)"
-
-      - name: Lancer les tests unitaires
-        run: echo "Exécution des tests unitaires (utilise pytest ou autre si applicable)"
-
-  build-and-publish:
-    name: Livraison Continue
-    needs: integration
+  build:
+    name: Build Docker Image
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout du code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Docker Buildx
+      - name: Build Docker image
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/streamlit-app:latest .
+
+  test:
+    name: Run Pytest Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run Pytest
+        run: pytest
+
+  publish:
+    name: Push Docker Image to Docker Hub
+    needs: [build, test]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Connexion à Docker Hub
+      - name: Log in to DockerHub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build et push de l'image Docker
+      - name: Build and Push Docker image
         uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/mon-app:latest
-
-      - name: Afficher le digest de l’image
-        run: echo "Digest: ${{ steps.build-and-publish.outputs.digest }}"
+          tags: ${{ secrets.DOCKER_USERNAME }}/streamlit-app:latest
