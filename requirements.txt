@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
--e file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps
+# -e file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps
     # via -r requirements.in
 aiohappyeyeballs==2.5.0
     # via aiohttp
