@@ -150,7 +150,7 @@ importlib-metadata==8.5.0
     #   opentelemetry-api
 ipykernel==6.29.5
     # via jupyterlab
-ipython==9.0.2
+ipython
     # via ipykernel
 ipython-pygments-lexers==1.1.1
     # via ipython
