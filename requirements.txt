@@ -232,7 +232,7 @@ markupsafe==3.0.2
     #   mako
     #   nbconvert
     #   werkzeug
-matplotlib==3.10.1
+matplotlib==3.9.4
     # via
     #   -r requirements.in
     #   mlflow
