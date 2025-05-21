@@ -130,6 +130,7 @@ rpds-py
 rsa
 scikit-learn
 scipy
+streamlit
 send2trash
 six
 smmap

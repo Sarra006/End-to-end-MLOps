@@ -3,9 +3,11 @@ import pandas as pd
 from unittest.mock import patch, mock_open
 import sys
 import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from src.MLOpsProject.components.data_validation import DataValiadtion
-from src.MLOpsProject.entity.config_entity import DataValidationConfig
+
+# ✅ Ajout du dossier src au chemin Python
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from MLOpsProject.components.data_validation import DataValiadtion
+from MLOpsProject.entity.config_entity import DataValidationConfig
 
 @pytest.fixture
 def config(tmp_path):
