@@ -162,4 +162,5 @@ werkzeug
 win32-setctime
 wrapt
 yarl
+xgboost
 zipp
