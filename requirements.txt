@@ -101,6 +101,7 @@ pandocfilters
 parso
 pillow
 platformdirs
+plotly
 prometheus-client
 prompt-toolkit
 propcache
