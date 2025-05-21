@@ -1,5 +1,8 @@
 import pytest
 import pandas as pd
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.MLOpsProject.components.data_transformation import DataTransformation
 from src.MLOpsProject.entity.config_entity import DataTransformationConfig
 
