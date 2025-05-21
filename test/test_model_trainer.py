@@ -4,7 +4,8 @@ import sys
 import os
 
 # ✅ Ajout du dossier src au chemin Python
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))from src.MLOpsProject.components.model_trainer import ModelTrainer
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from src.MLOpsProject.components.model_trainer import ModelTrainer
 from MLOpsProject.entity.config_entity import ModelTrainerConfig
 import pandas as pd
 

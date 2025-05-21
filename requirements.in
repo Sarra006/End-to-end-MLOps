@@ -4,7 +4,7 @@ notebook
 numpy
 scikit-learn
 matplotlib
-box
+box==5.4.0
 pyYAML
 tqdm
 pytest
