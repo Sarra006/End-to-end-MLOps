@@ -118,7 +118,7 @@ pyparsing
 python-dateutil
 python-json-logger
 pytz
-pywinpty
+#pywinpty
 pyyaml
 pyzmq
 referencing
