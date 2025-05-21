@@ -356,7 +356,7 @@ python-json-logger==3.3.0
     # via jupyter-events
 pytz==2025.1
     # via pandas
-pywin32==308
+pywin32==3.10.1
     # via
     #   docker
     #   jupyter-core
