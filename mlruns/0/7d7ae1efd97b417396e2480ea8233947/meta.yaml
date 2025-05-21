@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps/mlruns/0/7d7ae1efd97b417396e2480ea8233947/artifacts
+end_time: 1747335742220
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7d7ae1efd97b417396e2480ea8233947
+run_name: support_vector_machine_model.pkl
+run_uuid: 7d7ae1efd97b417396e2480ea8233947
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747335737625
+status: 3
+tags: []
+user_id: Sarra

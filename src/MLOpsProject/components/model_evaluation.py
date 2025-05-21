@@ -68,3 +68,5 @@ class ModelEvaluation:
 
         # Sauvegarde globale des scores
         save_json(path=Path(self.config.metrics_file_name), data=results)
+
+    

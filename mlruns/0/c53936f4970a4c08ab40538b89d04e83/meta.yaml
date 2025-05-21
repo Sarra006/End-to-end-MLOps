@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps/mlruns/0/c53936f4970a4c08ab40538b89d04e83/artifacts
+end_time: 1747335723278
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c53936f4970a4c08ab40538b89d04e83
+run_name: k-nearest_neighbors_model.pkl
+run_uuid: c53936f4970a4c08ab40538b89d04e83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747335717056
+status: 3
+tags: []
+user_id: Sarra

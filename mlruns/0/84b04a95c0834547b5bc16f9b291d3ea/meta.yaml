@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps/mlruns/0/84b04a95c0834547b5bc16f9b291d3ea/artifacts
+end_time: 1747335717034
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 84b04a95c0834547b5bc16f9b291d3ea
+run_name: gradient_boosting_model.pkl
+run_uuid: 84b04a95c0834547b5bc16f9b291d3ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747335711377
+status: 3
+tags: []
+user_id: Sarra
