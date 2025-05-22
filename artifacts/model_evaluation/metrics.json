@@ -1,0 +1,56 @@
+{
+    "adaboost_model.pkl": {
+        "accuracy": 0.9649122807017544,
+        "precision": 0.975609756097561,
+        "recall": 0.9302325581395349,
+        "f1_score": 0.9523809523809523
+    },
+    "decision_tree_model.pkl": {
+        "accuracy": 0.9473684210526315,
+        "precision": 0.9302325581395349,
+        "recall": 0.9302325581395349,
+        "f1_score": 0.9302325581395349
+    },
+    "gradient_boosting_model.pkl": {
+        "accuracy": 0.956140350877193,
+        "precision": 0.9523809523809523,
+        "recall": 0.9302325581395349,
+        "f1_score": 0.9411764705882353
+    },
+    "k-nearest_neighbors_model.pkl": {
+        "accuracy": 0.9473684210526315,
+        "precision": 0.9302325581395349,
+        "recall": 0.9302325581395349,
+        "f1_score": 0.9302325581395349
+    },
+    "logistic_regression_model.pkl": {
+        "accuracy": 0.9736842105263158,
+        "precision": 0.9761904761904762,
+        "recall": 0.9534883720930233,
+        "f1_score": 0.9647058823529412
+    },
+    "naive_bayes_model.pkl": {
+        "accuracy": 0.9649122807017544,
+        "precision": 0.975609756097561,
+        "recall": 0.9302325581395349,
+        "f1_score": 0.9523809523809523
+    },
+    "random_forest_model.pkl": {
+        "accuracy": 0.9649122807017544,
+        "precision": 0.975609756097561,
+        "recall": 0.9302325581395349,
+        "f1_score": 0.9523809523809523
+    },
+    "support_vector_machine_model.pkl": {
+        "accuracy": 0.9824561403508771,
+        "precision": 1.0,
+        "recall": 0.9534883720930233,
+        "f1_score": 0.9761904761904762
+    },
+    "xgboost_model.pkl": {
+        "accuracy": 0.956140350877193,
+        "precision": 0.9523809523809523,
+        "recall": 0.9302325581395349,
+        "f1_score": 0.9411764705882353
+    }
+}
