@@ -1,4 +1,4 @@
-import streamlit as st 
+import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
@@ -148,7 +148,6 @@ def add_predictions(input_data, model_name):
     pipeline = PredictionPipeline(models_dir="artifacts/model_trainer")
     prediction = pipeline.predict(input_array, model_name=model_name)
 
-    # Charger les métriques
     with open("artifacts/model_evaluation/metrics.json") as f:
         metrics = json.load(f)
 
@@ -228,8 +227,9 @@ def main():
         initial_sidebar_state="expanded"
     )
 
-    with open("assets/style.css") as f:
-        st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+    if os.path.exists("assets/style.css"):
+        with open("assets/style.css") as f:
+            st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
     input_data, selected_model = add_sidebar()
 
@@ -268,7 +268,4 @@ def main():
 
 
 if __name__ == '__main__':
-    import os
-    os.system("streamlit run app.py --server.address=0.0.0.0 --server.port=8501")
     main()
-    
