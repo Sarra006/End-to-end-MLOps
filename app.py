@@ -274,6 +274,7 @@ if __name__ == '__main__':
         print("✅ Entraînement réussi !")
         with open("training_done.flag", "w") as f:
             f.write("done")
+    print("✅ Chargement de l'application Streamlit...")
     os.system("streamlit run app.py --server.address=0.0.0.0 --server.port=5000")
     main()
     
