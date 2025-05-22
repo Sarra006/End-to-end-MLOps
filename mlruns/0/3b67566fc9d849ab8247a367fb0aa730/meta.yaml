@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SAROURA/OneDrive/Documents/ING4/Semestre%202/Machine%20Learning%20Avanc%C3%A9/Projet%20MLOPS/End-to-end-MLOps/mlruns/0/3b67566fc9d849ab8247a367fb0aa730/artifacts
+end_time: 1747911089912
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3b67566fc9d849ab8247a367fb0aa730
+run_name: random_forest_model.pkl
+run_uuid: 3b67566fc9d849ab8247a367fb0aa730
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747911084815
+status: 3
+tags: []
+user_id: Sarra

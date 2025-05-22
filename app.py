@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st 
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
@@ -20,12 +20,10 @@ def get_clean_data():
 def add_sidebar():
     st.sidebar.header("Sélection du modèle & mesures cellulaires")
 
-    # Noms des modèles
     models_path = Path("artifacts/model_trainer")
     model_files = [f.name for f in models_path.glob("*.pkl")]
     selected_model = st.sidebar.selectbox("Choisissez un modèle", model_files)
 
-    # Curseurs de caractéristiques
     data = get_clean_data()
 
     slider_labels = [
@@ -227,9 +225,8 @@ def main():
         initial_sidebar_state="expanded"
     )
 
-    if os.path.exists("assets/style.css"):
-        with open("assets/style.css") as f:
-            st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+    with open("assets/style.css") as f:
+        st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
     input_data, selected_model = add_sidebar()
 
@@ -267,5 +264,14 @@ def main():
     )
 
 
+# --- Point d'entrée ---
 if __name__ == '__main__':
-    main()
+    # Exécuter main.py une seule fois au lancement
+    if not os.path.exists("training_done.flag"):
+        os.system("python main.py")
+        print("✅ Entraînement réussi !")
+        with open("training_done.flag", "w") as f:
+            f.write("done")
+
+    # Lancer Streamlit
+    os.system("streamlit run app.py --server.address=0.0.0.0 --server.port=8501")
