@@ -9,6 +9,8 @@ plotly
 pyYAML
 tqdm
 pytest
+streamlit
+xgboost
 ensure
 joblib
 types-PyYAML
