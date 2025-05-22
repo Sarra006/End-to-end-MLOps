@@ -5,6 +5,7 @@ numpy
 scikit-learn
 matplotlib
 box==0.1.5
+plotly
 pyYAML
 tqdm
 pytest
